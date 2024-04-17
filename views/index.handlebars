@@ -13,15 +13,14 @@
       </form>
     </div>
   </div>
-  
+
   <!-- movie list -->
   <div class="row" id="data-panel">
     {{#each movies}}
     <div class="col-sm-3">
-      <a href="/{{this.id}}" class="text-secondary">
+      <a href="/movies/{{this.id}}" class="text-secondary">
         <div class="card mb-2">
-          <img class="card-img-top" src="https://movie-list.alphacamp.io/posters/{{this.image}}"
-            alt="Card image cap">
+          <img class="card-img-top" src="https://movie-list.alphacamp.io/posters/{{this.image}}" alt="Card image cap">
           <div class="card-body movie-item-body">
             <h6 class="card-title">{{this.title}}</h6>
           </div>
