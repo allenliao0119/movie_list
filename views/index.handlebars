@@ -13,102 +13,21 @@
       </form>
     </div>
   </div>
+  
   <!-- movie list -->
   <div class="row" id="data-panel">
+    {{#each movies}}
     <div class="col-sm-3">
-      <a href="/1" class="text-secondary">
+      <a href="/{{this.id}}" class="text-secondary">
         <div class="card mb-2">
-          <img class="card-img-top" src="https://movie-list.alphacamp.io/posters/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg"
+          <img class="card-img-top" src="https://movie-list.alphacamp.io/posters/{{this.image}}"
             alt="Card image cap">
           <div class="card-body movie-item-body">
-            <h6 class="card-title">Jurassic World: Fallen Kingdom</h6>
+            <h6 class="card-title">{{this.title}}</h6>
           </div>
         </div>
       </a>
     </div>
-
-    <div class="col-sm-3">
-      <a href="/2" class="text-secondary">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://movie-list.alphacamp.io/posters/rv1AWImgx386ULjcf62VYaW8zSt.jpg"
-            alt="Card image cap">
-          <div class="card-body movie-item-body">
-            <h6 class="card-title">Ant-Man and the Wasp</h6>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-sm-3">
-      <a href="/3" class="text-secondary">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://movie-list.alphacamp.io/posters/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg"
-            alt="Card image cap">
-          <div class="card-body movie-item-body">
-            <h6 class="card-title">Thor: Ragnarok</h6>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-sm-3">
-      <a href="/4" class="text-secondary">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://movie-list.alphacamp.io/posters/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg"
-            alt="Card image cap">
-          <div class="card-body movie-item-body">
-            <h6 class="card-title">Avengers: Infinity War</h6>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-sm-3">
-      <a href="/5" class="text-secondary">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://movie-list.alphacamp.io/posters/80PWnSTkygi3QWWmJ3hrAwqvLnO.jpg"
-            alt="Card image cap">
-          <div class="card-body movie-item-body">
-            <h6 class="card-title">Mission: Impossible - Fallout</h6>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-sm-3">
-      <a href="/6" class="text-secondary">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://movie-list.alphacamp.io/posters/x1txcDXkcM65gl7w20PwYSxAYah.jpg"
-            alt="Card image cap">
-          <div class="card-body movie-item-body">
-            <h6 class="card-title">Incredibles 2</h6>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-sm-3">
-      <a href="/7" class="text-secondary">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://movie-list.alphacamp.io/posters/jjPJ4s3DWZZvI4vw8Xfi4Vqa1Q8.jpg"
-            alt="Card image cap">
-          <div class="card-body movie-item-body">
-            <h6 class="card-title">Fifty Shades Freed</h6>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-sm-3">
-      <a href="/8" class="text-secondary">
-        <div class="card mb-2">
-          <img class="card-img-top" src="https://movie-list.alphacamp.io/posters/2slvblTroiT1lY9bYLK7Amigo1k.jpg"
-            alt="Card image cap">
-          <div class="card-body movie-item-body">
-            <h6 class="card-title">The First Purge</h6>
-          </div>
-        </div>
-      </a>
-    </div>
+    {{/each}}
   </div>
 </div>

@@ -2,6 +2,9 @@
 const express = require('express')
 const exphbs = require('express-handlebars')
 
+// include movie data
+const movies = require('./movies.json').results
+
 const app = express()
 
 // define the relative variables
@@ -15,7 +18,7 @@ app.set('view engine','handlebars')
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  res.render('index')
+  res.render('index', {movies})
 })
 
 // start and listen on the server
